@@ -15,11 +15,10 @@ def writeToFile(filename, text):
         return "Wrong type of text!"
     
     try:
-        file_ = open(filename, 'w')
+        with open(filename, 'w') as file_:
+            file_.write(text)
     except:
         return "File not found"
-    
-    file_.write(text)
 #-------------------------------------------------------------SECOND FUNCTION
 def appendToFile(filename,text):
     try:
@@ -28,24 +27,21 @@ def appendToFile(filename,text):
         return "Wrong type of text!"
     
     try:
-        file_ = open(filename, 'a')
+        with open(filename, 'a') as file_:
+            file_.write(text)
     except:
         return "File not found"
-    
-    file_.write(text)
 #-------------------------------------------------------------THIRD FUNCTION
 def readFromFile(filename):
     try:
         file_ = open(filename, 'r')
+        file_x = file_.read()
+        fulltxt = ""
+        for each_line in file_x:
+            fulltxt = fulltxt + each_line
+        return fulltxt
     except:
         return "File not found"
-    
-    file_x = file_.read()
-
-    fulltxt = ""
-    for each_line in file_x:
-        fulltxt = fulltxt + each_line
-    return fulltxt
 #-------------------------------------------------------------RESULTS
 writeToFile('greet.txt', 'Hello!\n')
 appendToFile('greet.txt', 'Goodbye!\n')
