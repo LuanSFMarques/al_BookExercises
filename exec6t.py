@@ -6,6 +6,7 @@
 #endswith() string method could be useful for this exercise, but to maintain the challenge in this
 #exercise, don’t use it as part of your solution.
 
+#Finished
 def ordinalSuffix(number):
     sufix = str(number)
     if sufix[-2:] in ("11","12","13"):
