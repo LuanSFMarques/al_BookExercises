@@ -3,7 +3,6 @@
 #list. If the list is empty, the function should return None. Since this function replicates Python’s
 #min() function, your solution shouldn’t use it.
 
-
 #Finished
 def getSmallest(listNum):
     if len(listNum) == 0:
@@ -18,7 +17,6 @@ def getSmallest(listNum):
         else:
             continue
     return smallest
-
 #-------------------------------------------------------------RESULTS
 try:
     assert getSmallest([1, 2, 3]) == 1
