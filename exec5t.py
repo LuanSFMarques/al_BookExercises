@@ -5,7 +5,7 @@
 #-- Prints 'Buzz' if the number is only divisible by 5.
 #-- Prints the number if the number is neither divisible by 3 nor 5.
 
-#Finished
+#Finished!
 def fizzBuzz(upTo):
     x = 1
     while x<=upTo:
