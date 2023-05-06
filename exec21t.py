@@ -11,6 +11,10 @@ from exec20t import isLeapYear
 def isValidDate(year,month,day):
     if year < 0:
         return False
+    if month < 1 or month > 12:
+        return False
+    if day < 1 or day > 31:
+        return False
     if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
         if day >= 1 and day <= 31:
             return True
@@ -32,8 +36,6 @@ def isValidDate(year,month,day):
                 return True
             else:
                 return False
-    else:
-        return False
 #-------------------------------------------------------------RESULTS
 try:
     assert isValidDate(1999, 12, 31) == True
