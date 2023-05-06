@@ -21,13 +21,10 @@ def isLeapYear(year):
     else:
         return False
 #-------------------------------------------------------------RESULTS
-try:
-    assert isLeapYear(1999) == False
-    assert isLeapYear(2000) == True
-    assert isLeapYear(2001) == False
-    assert isLeapYear(2004) == True
-    assert isLeapYear(2100) == False
-    assert isLeapYear(2400) == True
-    print("All right!")
-except:
-    print("WRONG ALGORITHM")
+
+assert isLeapYear(1999) == False
+assert isLeapYear(2000) == True
+assert isLeapYear(2001) == False
+assert isLeapYear(2004) == True
+assert isLeapYear(2100) == False
+assert isLeapYear(2400) == True
