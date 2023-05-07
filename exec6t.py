@@ -19,7 +19,6 @@ def ordinalSuffix(number):
         return (sufix + "rd") 
     else:
         return (sufix + "th") 
-
 try:
     assert ordinalSuffix(0) == '0th'
     assert ordinalSuffix(1) == '1st'
