@@ -9,16 +9,11 @@
 def printHandshakes(people):
     print("")
     cont = 0 
-    for name1 in people:
-        x = 0
-        for name2 in people:
-            if name1 == name2 or x >= 1:
-                if name1 == name2:
-                    print("", end="")
-                else:
-                    print(f"{name1} shakes hands with {name2}")
-                    cont += 1
-                x += 1
+    for name1 in range(0,len(people)-1):
+        for name2 in range(name1,len(people)):
+            if people[name1] != people[name2]:
+                print(f"{people[name1]} shakes hands with {people[name2]}")    
+                cont +=1
     return cont
 #-------------------------------------------------------------RESULTS      
 try:
