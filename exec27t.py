@@ -10,5 +10,6 @@ def drawRectangle(width, height):
     while x < height:
         print("#"*width)
         x += 1
+#-------------------------------------------------------------RESULTS      
 
 drawRectangle(10, 4)
