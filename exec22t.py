@@ -37,7 +37,7 @@ try:
     assert rpsWinner('scissors', 'paper') == 'player one'
     assert rpsWinner('rock', 'rock') == 'tie'
     assert rpsWinner('paper', 'paper') == 'tie'
-    assert rpsWinner('scissors', 'scissors') == 'tie'
+    assert rpsWinner('scissors' , 'scissors') == 'tie'
     print("All right!")
 except:
     print("WRONG ALGORITHM")
